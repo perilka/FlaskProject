@@ -19,7 +19,7 @@ def find_sum(num1, num2):
         num1 = float(num1)
         num2 = float(num2)
     except ValueError:
-        return "error: please enter numeric values ​​(integer or floating point)"
+        return "error: please enter numeric values (integer or floating point)"
     return f'the sum of {num1} and {num2} is {num1 + num2}'
 
 # Задание 3. Создайте маршрут /reverse/, который переворачивает текст
@@ -32,7 +32,7 @@ def reverse(text):
 # Задание 4. Реализуйте маршрут /user//
 @app.route('/user/<name>/<int:age>')
 def greet_user(name, age):
-    if age > 0 and age < 120:
+    if 0 < age < 120:
         return f'hello, {name}. you are {age} yo. cooooool!!!!!!!!'
     return 'please enter the correct age'
 
