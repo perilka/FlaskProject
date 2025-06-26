@@ -27,7 +27,7 @@ def find_sum(num1, num2):
 def reverse(text):
     if len(text.strip()) > 0:
         return text[::-1]
-    raise TypeError('please enter at least one character')
+    return 'please enter at least one character'
 
 # Задание 4. Реализуйте маршрут /user//
 @app.route('/user/<name>/<int:age>')
