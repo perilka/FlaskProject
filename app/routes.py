@@ -7,5 +7,3 @@ def hello():
 @app.route("/info")
 def info():
     return "This is an informational page."
-
-# и все оставшиеся маршруты
