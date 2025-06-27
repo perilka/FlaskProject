@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}">
 </head>
 <body>
-    <h1>Contacts</h1>
-    <p>Contact us via <a href="https://t.me/neperilka">Telegram</a></p>
+<header>
+    <nav class="navbar">
+        <div class="logo">tipa logotip</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="content">
+        <h1>Contact Us</h1>
+        <p>Reach out to us via Telegram for any inquiries or support.</p>
+        <a href="https://t.me/neperilka" class="btn" target="_blank">Message us on Telegram</a>
+    </section>
+</main>
 </body>
 </html>
